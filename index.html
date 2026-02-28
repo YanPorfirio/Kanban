@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/kanban.png" type="image/x-icon">
+    <title>Kanban Board</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-icon">KB</div>
+            <span class="logo-text">Kanban Board</span>
+        </div>
+
+        <button class="sidebar-toggle" title="Recolher meu">
+            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        
+        <nav class="nav-section">
+
+            <div class="nav-section-label">Principal</div>
+                <a class="nav-item active" data-tooltip="Início" href="#">
+                    <div class="nav-icon"></div>
+                    <span class="nav-label">Inicio</span>
+                </a>
+
+                <a class="nav-item" data-tooltip="Quadros" href="#">
+                    <div class="nav-icon"></div>
+                    <span class="nav-label">Quadros</span>
+                </a>
+
+                <a class="nav-item" data-tooltip="Minhas Tarefas" href="#">
+                    <div class="nav-icon"></div>
+                    <span class="nav-label">Minhas Tarefas</span>
+                    <span class="badge">5</span>
+                </a>
+
+                <a class="nav-item" data-tooltip="Calendário" href="#">
+                    <div class="nav-icon"></div>
+                    <span class="nav-label">Calendário</span>
+                </a>
+
+                <div class="nav-sep"></div>
+                <div class="nav-section-label">Geral</div>
+
+                <a class="nav-item" data-tooltip="Configurações" href="#">
+                    <div class="nav-icon"></div>
+                    <span class="nav-label">Configurações</span>
+                </a>
+
+                <a class="nav-item" data-tooltip="Ajuda" href="#">
+                    <div class="nav-icon"></div>
+                    <span class="nav-label">Ajuda</span>
+                 </a>
+        </nav>
+    </aside>
+
+<!-- Conteúdo -->
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Quadro Kanban</h1>
+            <p>Arraste cards entre colunas para atualizar o status</p>
+        </div>
+
+       <div class="kanban-board">
+            <div class="kanban-column">
+                <div class="column-header">
+                   <div class="column-dot" style="background: var(--todo);"></div>
+                   A Fazer
+                </div>
+                <span class="column-content">3</span>
+            </div>
+            <div class="card">
+                <div class="card-title">Card 1</div>
+                <div class="card-meta">
+                    <span class="card-tag" style="background:rgba(255,101,132,.15);color:var(--primary-light)">Docs</span>
+                    Sem data de entrega
+                </div>
+            </div>
+             <div class="card">
+                <div class="card-title">Configurar CI/CD</div>
+                <div class="card-meta">
+                    <span class="card-tag" style="background:rgba(67,233,123,.15);color:var(--done)">DevOps</span>
+                    3 dias
+                </div>
+            </div>
+       </div>
+    </main>
+
+
+    <script src="index.tsx"></script>
+    <footer>
+        <p>Copyright © 2026</p>
+    </footer>
+</body>
+</html>
