@@ -32,8 +32,7 @@
         </header>
 
         <section class="content">
-            <div class="block">
-
+            <div class="column" id="todo">
                 <h2 class="sub-title">A Fazer</h2>
                 <div class="task-list">
                     <div class="card">
@@ -49,8 +48,10 @@
                         <p>Definir as tarefas e metas para a próxima sprint.</p>
                     </div>
                 </div>
-                
-                <h2>Em Progresso</h2>
+            </div>
+            
+            <div class="column" id="in-progress">
+                <h2 class="sub-title">Em Progresso</h2>
                 <div class="task-list">
                     <div class="card">
                         <h3>Implementar autenticação</h3>
@@ -61,8 +62,10 @@
                         <p>Garantir que a comunicação com a API esteja funcionando corretamente.</p>
                     </div>
                 </div>
-                
-                <h2>Concluído</h2>
+            </div>
+            
+            <div class="column" id="done">
+                <h2 class="sub-title">Concluído</h2>
                 <div class="task-list">
                     <div class="card">
                         <h3>Definir escopo do projeto</h3>
@@ -71,13 +74,13 @@
                     <div class="card">
                         <h3>Reunir requisitos</h3>
                         <p>Coletar e documentar os requisitos do cliente.</p>
+                    </div>
                 </div>
             </div>
-
         </section>
     </main>
 
 
-    <script src="index.tsx"></script>
+    <script src="index.js"></script>
 </body>
 </html>
