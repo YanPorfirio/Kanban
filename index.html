@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/kanban.png" type="image/x-icon">
-    <title>Kanban Board</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imagens/kanban.png" type="image/x-icon">
+        <title>Kanban Board</title>
+        <script src="index.js"></script>
+    </head>
 
-<body>
-    <aside class="sidebar">
-        <div class="logo-kan">KB</div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#" class="nav-link">Dashboard</a></li>
-                <li><a href="#" class="nav-link">Projetos</a></li>
-                <li><a href="#" class="nav-link">Tarefas</a></li>
-                <li><a href="#" class="nav-link">Configurações</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <body>
+        <aside class="sidebar">
+            <div class="logo-kan">KB</div>
+            <button id="toggle-sidebar"></button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link">Dashboard</a></li>
+                    <li><a href="#" class="nav-link">Projetos</a></li>
+                    <li><a href="#" class="nav-link">Tarefas</a></li>
+                    <li><a href="#" class="nav-link">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
 
     <!--Conteúdo-->
 
-    <main>
-        <header>
-            <div class="header-content">
-                <h1>Bem-vindo ao Kanban Board</h1>
-                <p>Organize suas tarefas de forma eficiente e visual.</p>
-            </div>
-        </header>
+        <main>
+            <header>
+                <div class="header-content">
+                    <h1>Bem-vindo ao Kanban Board</h1>
+                    <p>Organize suas tarefas de forma eficiente e visual.</p>
+                </div>
+            </header>
 
-        <section class="content">
-            <div class="column" id="todo">
-                <h2 class="sub-title">A Fazer</h2>
-                <div class="task-list">
-                    <div class="card">
-                        <h3>Design do site</h3>
-                        <p>Criação do layout e design para o novo site.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Configurar ambiente de desenvolvimento</h3>
-                        <p>Instalar ferramentas e configurar o ambiente para o projeto.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Planejar sprint</h3>
-                        <p>Definir as tarefas e metas para a próxima sprint.</p>
+            <section class="content">
+                <div class="column" id="todo">
+                    <h2 class="sub-title">A Fazer</h2>
+                    <div class="task-list">
+                        <div class="card">
+                            <h3>Design do site</h3>
+                            <p>Criação do layout e design para o novo site.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Configurar ambiente de desenvolvimento</h3>
+                            <p>Instalar ferramentas e configurar o ambiente para o projeto.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Planejar sprint</h3>
+                            <p>Definir as tarefas e metas para a próxima sprint.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             
-            <div class="column" id="in-progress">
-                <h2 class="sub-title">Em Progresso</h2>
-                <div class="task-list">
-                    <div class="card">
-                        <h3>Implementar autenticação</h3>
-                        <p>Adicionar sistema de login e registro de usuários.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Testar integração com API</h3>
-                        <p>Garantir que a comunicação com a API esteja funcionando corretamente.</p>
+                <div class="column" id="in-progress">
+                    <h2 class="sub-title">Em Progresso</h2>
+                    <div class="task-list">
+                        <div class="card">
+                            <h3>Implementar autenticação</h3>
+                            <p>Adicionar sistema de login e registro de usuários.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Testar integração com API</h3>
+                            <p>Garantir que a comunicação com a API esteja funcionando corretamente.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             
-            <div class="column" id="done">
-                <h2 class="sub-title">Concluído</h2>
-                <div class="task-list">
-                    <div class="card">
-                        <h3>Definir escopo do projeto</h3>
-                        <p>Estabelecer os objetivos e limites do projeto.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Reunir requisitos</h3>
-                        <p>Coletar e documentar os requisitos do cliente.</p>
+                <div class="column" id="done">
+                    <h2 class="sub-title">Concluído</h2>
+                    <div class="task-list">
+                        <div class="card">
+                            <h3>Definir escopo do projeto</h3>
+                            <p>Estabelecer os objetivos e limites do projeto.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Reunir requisitos</h3>
+                            <p>Coletar e documentar os requisitos do cliente.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Encontrar bug no projeto</h3>
+                            <p>Revisar codigo de segunda feira</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-
-
-    <script src="index.js"></script>
-</body>
+            </section>
+        </main>
+    </body> 
 </html>
